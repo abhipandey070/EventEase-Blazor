@@ -1,1 +1,39 @@
+@page "/register"
 
+<h3>Event Registration</h3>
+
+<label>Name</label>
+<br />
+
+<input @bind="Name" />
+
+<br /><br />
+
+<label>Email</label>
+<br />
+
+<input @bind="Email" />
+
+<br /><br />
+
+<button @onclick="Register">
+Register
+</button>
+
+@if(Message!="")
+{
+    <p>@Message</p>
+}
+
+@code{
+
+    string Name="";
+    string Email="";
+    string Message="";
+
+    void Register()
+    {
+        Message="Registration Successful!";
+    }
+
+}
