@@ -1,1 +1,22 @@
+<div class="card border p-3 m-2">
 
+    <h3>@Title</h3>
+
+    <p><strong>Location:</strong> @Location</p>
+
+    <p><strong>Date:</strong> @Date</p>
+
+</div>
+
+@code{
+
+    [Parameter]
+    public string Title { get; set; } = "";
+
+    [Parameter]
+    public string Location { get; set; } = "";
+
+    [Parameter]
+    public string Date { get; set; } = "";
+
+}
